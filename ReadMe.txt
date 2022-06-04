@@ -4,14 +4,11 @@ All group members were present and contributing during all work on this project.
 We have neither received nor given any unauthorized aid in this assignment.
 ********/
 ReadMe:
-1, Students: Nick Luo(Haiyu) Ray Zeng(Tianrui)
+1, Contributor: Nick Luo(Haiyu) Ray Zeng(Tianrui)
 
 2, Name of files: SudokuPlayer.java
 
-3, Possible bugs: 
-Both of the solver could output the correct results, however, the customSolver may take a bit longer time comparing to AC3 due to more recursive cases.
-
-4, Explanation of the customSolver:
+3, Explanation of the customSolver:
 We have used Forward-checking algorithm for the premise of the customized solver. The forward-checking algorithm will check whether using one value will cause the domain of other values become empty. We have also tried two different heuristics: the least constraint value and the most constraint variables. We believe that an efficient implementation of the two heuristics will reduce the recursive steps a lot and also have much faster run-time. However, our implementation is not very efficient that we use a board called heuristic to store the heuristic value for the choosing next variable and it requires several long for loops to update and select the next variable, which although has less recursive steps, has longer runtime. 
 
 The customized solver perform worse than the AC3 because we believe that forward-checking only check one steps instead of checking all the constraints like a chain in AC3. AC3 in some sense can be viewed a really powerful forward-checking that it check more steps than forward-checking, so AC3 will definitely has less recursive steps.
